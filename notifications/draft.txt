@@ -1,0 +1,13 @@
+Telegram username: @qa_guru_sulz_hw13_bot
+Telegram token: 6224995022:AAGUgHt-9zudoQfkzAUdheOILYnqdrqIKuo
+Chat id: -1001837152110
+
+Fetch bot updates and look for the chat id:
+https://api.telegram.org/botИдентификаторВашегоБота/getUpdates
+https://api.telegram.org/bot6224995022:AAGUgHt-9zudoQfkzAUdheOILYnqdrqIKuo/getUpdates
+
+Send a message using the HTTP API:
+curl -X POST -H "Content-Type: application/json" -d "{\"chat_id\": \"-1001837152110\", \"text\": \"This is a test from qa.guru\", \"disable_notification\": true}" https://api.telegram.org/bot6224995022:AAGUgHt-9zudoQfkzAUdheOILYnqdrqIKuo/sendMessage
+
+Run jar with notifications
+java "-DconfigFile=notifications/telegram.json" -jar notifications/allure-notifications-4.2.1.jar
