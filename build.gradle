@@ -53,17 +53,3 @@ task smoke_tests(type: Test) {
         includeTags("smoke")
     }
 }
-
-help {
-    doFirst {
-        println ""
-        println "************************************************************************ "
-        println "***                                                                  *** "
-        println "*** Welcome to https://github.com/qa-guru/demoqa-test-16!            *** "
-        println "***                                                                  *** "
-        println "*** ./gradlew help                                                   *** "
-        println "***                                                                  *** "
-        println "************************************************************************ "
-        println ""
-    }
-}
