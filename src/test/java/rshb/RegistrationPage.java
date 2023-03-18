@@ -91,8 +91,8 @@ public class RegistrationPage {
 
     public RegistrationPage setCity(String value) {
         city.setValue(value);
-        sleep(2000);
-        $(".vacancies__search-items--top").$(byText(value)).click();
+        //sleep(2000);
+        //$(".vacancies__search-items--top").$(byText(value)).click();
         return this;
     }
 
