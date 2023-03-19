@@ -28,10 +28,9 @@ TestsDataRshb testsData = new TestsDataRshb();
                     .clickCheckboxPersonalData()
                     .clickApply();
         });
-        step("Проверяем, что форма заполнена. Закрываем форму", () -> {
+        step("Проверяем, что форма отправлена. Закрываем форму", () -> {
             rshbRegistrationPage.verifyResultsModalAppears()
                     .clickClose();
         });
-
     }
 }

@@ -3,7 +3,6 @@ package rshb;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.selector.ByText;
 
-
 import java.io.File;
 
 import static com.codeborne.selenide.Condition.text;
@@ -99,7 +98,6 @@ public class RegistrationPage {
         sleep(2000);
         $(".form__step-title").click();
         return this;
-
     }
 
     public RegistrationPage setStageOfStudySelect(String value) {
