@@ -24,7 +24,7 @@ public class TestsDataRshb {
             directionsSelect = getDirectionsSelectRandom(),
             skill = "Java, SQL",
             expectations = "Получить опыт коммерческой разработки автотестов, получить работу",
-            resume = "src/test/resources/резюме.docx",
+            resume = "src/test/resources/resume.docx",
             vuz = "ФГБОУ ВО Самарский ГАУ",
             stageOfStudyRandom = getStageOfStudyRandom();
 
@@ -43,7 +43,6 @@ public class TestsDataRshb {
         int i = random.nextInt(directions.length);
         return directions[i];
     }
-
 
     public String getStageOfStudyRandom() {
         String[] stageOfStudy = {"выпускник", "аспирант"};

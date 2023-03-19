@@ -32,8 +32,8 @@ public class RegistrationPage {
             attachResume = $("#resume_33dert121"),
             checkboxPersonalData = $(".checkbox-wrap.mt-2.w-100"),
             applyButton = checkboxPersonalData.parent().sibling(0).lastChild().find(".btn.btn--green.mt-0"),
-            closeButton = $("#closeLargeModal");
-
+            closeButtonError = $("div[class='modal izi-modal iziModal modal_active modal--short'] div[class='modal__close']");
+            //closeButton = $("#closeLargeModal");
 
     /**
      * метод открывает форму заявки на https://rshbdigital.ru/stage/
@@ -91,8 +91,6 @@ public class RegistrationPage {
 
     public RegistrationPage setCity(String value) {
         city.setValue(value);
-        //sleep(2000);
-        //$(".vacancies__search-items--top").$(byText(value)).click();
         return this;
     }
 
@@ -135,7 +133,7 @@ public class RegistrationPage {
     }
 
     public RegistrationPage clickClose() {
-        closeButton.click();
+        closeButtonError.click();
         return this;
     }
 

@@ -20,7 +20,7 @@ public class TestBaseRshb {
         Configuration.browserVersion = System.getProperty("version", "100");
         Configuration.browserSize = System.getProperty("size", "1920x1080");
         Configuration.baseUrl = System.getProperty("baseUrl", "https://rshbdigital.ru");
-        //Configuration.remote = System.getProperty("remote", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
+        Configuration.remote = System.getProperty("remote", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
 
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
