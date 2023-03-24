@@ -25,14 +25,13 @@ public class RegistrationPage {
             skill = $("#skill_33dert121"),
             stageOfStudySelect = $("div[name='stages'] div[class='ks-select__current']"),
             stageOfStudyRadio = $("div[name='stages'] div[class='ks-select__list']"),
-            vuz = $("#vuz_33dert121"),
+            vuz = $("[name=vuz]"),
             expectations = $("#text_33dert121"),
             nextButton2 = expectations.parent().parent().sibling(0).lastChild().find(".btn.btn--green.mt-0"),
             attachResume = $("#resume_33dert121"),
             checkboxPersonalData = $(".checkbox-wrap.mt-2.w-100"),
             applyButton = checkboxPersonalData.parent().sibling(0).lastChild().find(".btn.btn--green.mt-0"),
-            closeButtonError = $("div[class='modal izi-modal iziModal modal_active modal--short'] div[class='modal__close']");
-            //closeButton = $("#closeLargeModal");
+            closeButtonError = $x("(//div[@class='modal__close'])[2]");
 
     /**
      * метод открывает форму заявки на https://rshbdigital.ru/stage/
@@ -134,6 +133,16 @@ public class RegistrationPage {
 
     public RegistrationPage clickClose() {
         closeButtonError.click();
+        return this;
+    }
+
+    public RegistrationPage verifyResult1() {
+        registrationResultsModal.verifyResult1();
+        return this;
+    }
+
+    public RegistrationPage verifyResult2() {
+        registrationResultsModal.verifyResult2();
         return this;
     }
 

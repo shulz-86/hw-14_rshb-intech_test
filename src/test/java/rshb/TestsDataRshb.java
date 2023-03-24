@@ -14,8 +14,7 @@ public class TestsDataRshb {
      * Генерируем тестовые данные
      */
     public String name = faker.name().name(),
-
-            userNumber = faker.phoneNumber().subscriberNumber(11),
+            userNumber = faker.instance().bothify("+7-9##-###-##-##"),
             day = String.format("%02d", faker.number().numberBetween(1, 28)),
             month = String.format("%02d", faker.number().numberBetween(1, 12)),
             year = String.valueOf(faker.number().numberBetween(1900, 2022)),
