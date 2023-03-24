@@ -23,18 +23,24 @@ TestsDataRshb testsData = new TestsDataRshb();
         step("Проверяем, что открылась вторая страничка формы", () -> {
             rshbRegistrationPage.verifyResult1();
         });
-        step("Заполняем вторую страничку формы тестовыми данными. Нажимаем далее", () -> {
-            rshbRegistrationPage
-                    .setVuz(testsData.vuz)
-                    .setStageOfStudySelect(testsData.stageOfStudyRandom)
-                    .setSkill(testsData.skill)
-                    .setExpectations(testsData.expectations)
-                    .clickNext2();
-        });
-        step("Проверяем, что открылась третья страничка формы", () -> {
-            rshbRegistrationPage.verifyResult2();
-        });
-        step("Заполняем вторую страничку формы тестовыми данными. Нажимаем Подать заявку", () -> {
+    }
+    @Test
+        void fillFormTest2() {
+            step("Заполняем вторую страничку формы тестовыми данными. Нажимаем далее", () -> {
+                rshbRegistrationPage
+                        .setVuz(testsData.vuz)
+                        .setStageOfStudySelect(testsData.stageOfStudyRandom)
+                        .setSkill(testsData.skill)
+                        .setExpectations(testsData.expectations)
+                        .clickNext2();
+            });
+            step("Проверяем, что открылась третья страничка формы", () -> {
+                rshbRegistrationPage.verifyResult2();
+            });
+        }
+    @Test
+    void fillFormTest3() {
+        step("Заполняем третью страничку формы тестовыми данными. Нажимаем Подать заявку", () -> {
             rshbRegistrationPage
                     .setResume(testsData.resume)
                     .clickCheckboxPersonalData()
