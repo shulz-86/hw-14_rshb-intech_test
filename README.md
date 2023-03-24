@@ -17,3 +17,9 @@
 <code><img width="5%" title="Jira" src="media/logo/Jira.svg"></code>
 <code><img width="5%" title="Telegram" src="media/logo/Telegram.svg"></code>
 </p>
+
+## :maple_leaf: Список проверок, реализованных в автотестах
+
+- [x] Проверка кликабельности кнопки "Подать заявку"
+- [x] Проверка полей формы для отклика на стажировку
+- [x] Проверка управляющих элементов формы 
