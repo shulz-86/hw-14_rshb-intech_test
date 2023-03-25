@@ -50,19 +50,45 @@ gradle clean test
 ### <img src="media/logo/Allure.svg" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/017-aolshanskaya-hw_14/12/allure/"> report</a>
 
 #### :black_small_square: Основной отчет
+<p align="center">
+<img title="Allure Report Dashboards" src="/media/video/AllureReport.png">
+</p>
 
 #### :black_small_square: Тесты
+<p align="center">
+<img title="Allure Report Tests" src="/media/video/AllureReportTest.png">
+</p>
 
 ### <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure TestOps"/>Отчет в Allure</a> <a target="_blank" href="https://allure.autotests.cloud/jobrun/19967"> TestOps</a>
 
 #### :black_small_square: Основной отчет
+<p align="center">
+<img title="Allure TestOps Dashboards" src="/media/video/AllureTestOpsDashboards.png">
+</p>
 
 #### :black_small_square: Тесты
 <p align="center">
-<img title="Allure Suites" src="/images/screens/testsOps.jpg">
+<img title="Allure TestOps Tests" src="/media/video/AllureTestOpsTests.png">
 </p>
 
 #### :black_small_square: Пример ручных тестов
 <p align="center">
   <img title="Allure TestOps manual tests" src="media/video/AllureTestOps_draftTest.png">
+</p>
+
+## :bookmark: <img src="media/logo/Telegram.svg" width="25" height="25"  alt="Telegram"/>Telegram уведомления</a>
+
+<p align="center">
+<img title="Allure Overview Dashboard" src="media/video/telegramBot.png">
+</p>
+
+## :bookmark: <img src="/images/logos/Jira.svg" width="25" height="25" alt="Jira"/>Jira интеграция</a>
+<p align="center">
+  <img title="Allure TestOps overview" src="/images/screens/jira.jpg">
+</p>
+
+## :bookmark: <img src="/images/logos/Selenoid.svg" width="25" height="25" alt="Selenoid"/>Selenoid видеозапись тестов</a>
+### Видео запись прохождения тестов
+<p align="center">
+  <img title="Selenoid video for test4" src="/images/gif/video.gif">
 </p>
