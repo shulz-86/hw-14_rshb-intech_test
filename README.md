@@ -1,4 +1,4 @@
-# <a href="https://rshbdigital.ru/stage"><img src="/images/logos/AlfaLogo.png" width="25" height="25"  alt="IDEA"/></a> Проект по автоматизации тестирования веб для РСХБ-интех (hw-14_rshb-intech_test)
+# <a href="https://rshbdigital.ru/stage"><img src="media/logo/rshb_logo.png" width="55" height="35"/></a> Проект по автоматизации тестирования веб для РСХБ-интех (hw-14_rshb-intech_test)
 
 ## :technologist: Технологии и инструменты
 
@@ -47,11 +47,14 @@ gradle clean test
 
 ## :triangular_flag_on_post: Allure отчеты:
 
-### <img src="/images/logos/Allure.svg" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/golem272_fast/allure/"> report</a>
+### <img src="media/logo/Allure.svg" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/017-aolshanskaya-hw_14/12/allure/"> report</a>
 
 #### :black_small_square: Основной отчет
+
 #### :black_small_square: Тесты
-### <img src="/images/logos/Allure_TO.svg" width="25" height="25"  alt="Allure TestOps"/>Отчет в Allure</a> <a target="_blank" href="https://allure.autotests.cloud/jobrun/19967"> TestOps</a>
+
+### <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure TestOps"/>Отчет в Allure</a> <a target="_blank" href="https://allure.autotests.cloud/jobrun/19967"> TestOps</a>
+
 #### :black_small_square: Основной отчет
 
 #### :black_small_square: Тесты
@@ -61,5 +64,5 @@ gradle clean test
 
 #### :black_small_square: Пример ручных тестов
 <p align="center">
-  <img title="Allure TestOps manual tests" src="/images/screens/manual.jpg">
+  <img title="Allure TestOps manual tests" src="media/video/AllureTestOps_draftTest.png">
 </p>
