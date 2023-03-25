@@ -56,10 +56,13 @@ gradle clean test
 ### <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure TestOps"/>Отчет в Allure</a> <a target="_blank" href="https://allure.autotests.cloud/jobrun/19967"> TestOps</a>
 
 #### :black_small_square: Основной отчет
+<p align="center">
+<img title="Allure TestOps Dashboards" src="/media/video/AllureTestOpsDashboards.png">
+</p>
 
 #### :black_small_square: Тесты
 <p align="center">
-<img title="Allure Suites" src="/images/screens/testsOps.jpg">
+<img title="Allure TestOps Tests" src="/media/video/AllureTestOpsTests.png">
 </p>
 
 #### :black_small_square: Пример ручных тестов
