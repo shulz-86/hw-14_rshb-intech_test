@@ -75,3 +75,20 @@ gradle clean test
 <p align="center">
   <img title="Allure TestOps manual tests" src="media/video/AllureTestOps_draftTest.png">
 </p>
+
+## :bookmark: <img src="media/logo/Telegram.svg" width="25" height="25"  alt="Telegram"/>Telegram уведомления</a>
+
+<p align="center">
+<img title="Allure Overview Dashboard" src="media/video/telegramBot.png">
+</p>
+
+## :bookmark: <img src="/images/logos/Jira.svg" width="25" height="25" alt="Jira"/>Jira интеграция</a>
+<p align="center">
+  <img title="Allure TestOps overview" src="/images/screens/jira.jpg">
+</p>
+
+## :bookmark: <img src="/images/logos/Selenoid.svg" width="25" height="25" alt="Selenoid"/>Selenoid видеозапись тестов</a>
+### Видео запись прохождения тестов
+<p align="center">
+  <img title="Selenoid video for test4" src="/images/gif/video.gif">
+</p>
