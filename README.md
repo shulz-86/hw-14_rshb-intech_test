@@ -33,24 +33,17 @@
 ## :rocket: Запуск тестов
 
 ###  :rocket: Локальный запуск :
-Пример командной строки:
 ```bash
-gradle clean ui_tests
-```
-Получение отчёта:
-```bash
-allure serve build/allure-results
+gradle clean test
 ```
 
 ###  :rocket: Удаленный запуск (в Jenkins):
-1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/C16-NazilyaMullagildina_UI-tests/">проект</a>
+1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/017-aolshanskaya-hw_14/">проект</a>
 
 ![This is an image](/images/screens/Jenkins1.png)
 
-2. Выбрать пункт **Собрать с параметрами**
-3. В случае необходимости изменить параметры, выбрав значения из выпадающих списков
-4. Нажать **Собрать**
-5. Результат запуска сборки можно посмотреть в отчёте Allure
+2. Нажать **Собрать сейчас**
+3. Результат запуска сборки можно посмотреть в отчёте Allure
 
 ## :triangular_flag_on_post: Allure отчеты:
 
