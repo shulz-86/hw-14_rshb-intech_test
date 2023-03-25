@@ -90,5 +90,5 @@ gradle clean test
 ##  <img src="media/logo/Selenoid.svg" width="25" height="25" alt="Selenoid"/>Selenoid видеозапись тестов</a>
 ### Видеозапись прохождения тестов
 <p align="center">
-  <img title="Selenoid video for test4" src="/images/gif/video.gif">
+  <img title="Selenoid video for test4" src="media/video/SelenoidVideo.gif">
 </p>
