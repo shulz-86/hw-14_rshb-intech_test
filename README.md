@@ -23,3 +23,41 @@
 - [x] Проверка кликабельности кнопки "Подать заявку"
 - [x] Проверка полей формы для отклика на стажировку
 - [x] Проверка управляющих элементов формы 
+
+## :maple_leaf: Запуск тестов
+
+###  Локальный запуск :
+Пример командной строки:
+```bash
+gradle clean ui_tests
+```
+Получение отчёта:
+```bash
+allure serve build/allure-results
+```
+
+###  Удаленный запуск (в Jenkins):
+1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/C16-NazilyaMullagildina_UI-tests/">проект</a>
+
+![This is an image](/images/screens/Jenkins1.png)
+
+2. Выбрать пункт **Собрать с параметрами**
+3. В случае необходимости изменить параметры, выбрав значения из выпадающих списков
+4. Нажать **Собрать**
+5. Результат запуска сборки можно посмотреть в отчёте Allure
+
+## :bookmark: Allure отчеты:
+#### Основной отчет
+#### Тесты
+### <img src="/images/logos/Allure_TO.svg" width="25" height="25"  alt="Allure TestOps"/>Отчет в Allure</a> <a target="_blank" href="https://allure.autotests.cloud/jobrun/19967"> TestOps</a>
+#### Основной отчет
+
+#### Тесты
+<p align="center">
+<img title="Allure Suites" src="/images/screens/testsOps.jpg">
+</p>
+
+#### Пример ручных тестов
+<p align="center">
+  <img title="Allure TestOps manual tests" src="/images/screens/manual.jpg">
+</p>
