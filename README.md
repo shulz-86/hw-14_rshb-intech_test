@@ -64,5 +64,5 @@ gradle clean test
 
 #### :black_small_square: Пример ручных тестов
 <p align="center">
-  <img title="Allure TestOps manual tests" src="media/logo/AllureTestOps_draftTest.png">
+  <img title="Allure TestOps manual tests" src="media/video/AllureTestOps_draftTest.png">
 </p>
