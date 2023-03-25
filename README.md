@@ -1,4 +1,4 @@
-# <a href="https://alfabank.ru/"><img src="/images/logos/AlfaLogo.png" width="25" height="25"  alt="IDEA"/></a> Проект по автоматизации тестирования веб для РСХБ-интех (hw-14_rshb-intech_test)
+# <a href="https://rshbdigital.ru/stage"><img src="/images/logos/AlfaLogo.png" width="25" height="25"  alt="IDEA"/></a> Проект по автоматизации тестирования веб для РСХБ-интех (hw-14_rshb-intech_test)
 
 ## :technologist: Технологии и инструменты
 
