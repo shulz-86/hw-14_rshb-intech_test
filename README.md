@@ -50,8 +50,14 @@ gradle clean test
 ### <img src="media/logo/Allure.svg" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/017-aolshanskaya-hw_14/12/allure/"> report</a>
 
 #### :black_small_square: Основной отчет
+<p align="center">
+<img title="Allure Report Dashboards" src="/media/video/AllureReport.png">
+</p>
 
 #### :black_small_square: Тесты
+<p align="center">
+<img title="Allure Report Tests" src="/media/video/AllureReportTest.png">
+</p>
 
 ### <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure TestOps"/>Отчет в Allure</a> <a target="_blank" href="https://allure.autotests.cloud/jobrun/19967"> TestOps</a>
 
