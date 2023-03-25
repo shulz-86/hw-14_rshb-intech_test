@@ -84,7 +84,7 @@ gradle clean test
 
 ## <img src="media/logo/Jira.svg" width="25" height="25" alt="Jira"/>Atlassian Jira интеграция</a>
 <p align="center">
-  <img title="Allure TestOps overview" src="/images/screens/jira.jpg">
+  <img title="Allure TestOps overview" src="media/video/JiraScreen.png">
 </p>
 
 ##  <img src="media/logo/Selenoid.svg" width="25" height="25" alt="Selenoid"/>Selenoid видеозапись тестов</a>
