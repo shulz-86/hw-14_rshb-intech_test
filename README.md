@@ -39,7 +39,7 @@ gradle clean test
 
 ###  :rocket: Удаленный запуск (в Jenkins):
 <p align="center">
-<img title="Allure Report Tests" src="/media/video//media/video/Jenkins.png">
+<img title="Jenkins" src="/media/video/Jenkins.png">
 </p>
 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/017-aolshanskaya-hw_14/">проект</a>
 2. Нажать **Собрать сейчас**
