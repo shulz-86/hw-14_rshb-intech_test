@@ -38,12 +38,13 @@ gradle clean test
 ```
 
 ###  :rocket: Удаленный запуск (в Jenkins):
+<p align="center">
+<img title="Jenkins" src="/media/video/Jenkins.png">
+</p>
+
 1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/017-aolshanskaya-hw_14/">проект</a>
-
-![This is an image](/images/screens/Jenkins1.png)
-
-2. Нажать **Собрать сейчас**
-3. Результат запуска сборки можно посмотреть в отчёте Allure
+3. Нажать **Собрать сейчас**
+4. Результат запуска сборки можно посмотреть в отчёте Allure
 
 ## :triangular_flag_on_post: Allure отчеты:
 
