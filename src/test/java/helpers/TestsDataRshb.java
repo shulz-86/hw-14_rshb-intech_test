@@ -1,4 +1,4 @@
-package rshb;
+package helpers;
 
 import com.github.javafaker.Faker;
 import com.github.javafaker.service.FakerIDN;
@@ -27,6 +27,10 @@ public class TestsDataRshb {
             vuz = "ФГБОУ ВО Самарский ГАУ",
             stageOfStudyRandom = getStageOfStudyRandom();
 
+    public String searchData = "Стажировка",
+    resultOfSearch = "Результаты вашего поиска",
+    totalResult = "Найден 1 результат";
+
 
     public String getCityRandom() {
         String[] states = {"Москва", "Санкт-Петербург", "Севастополь", "Архангельск",
@@ -48,4 +52,6 @@ public class TestsDataRshb {
         int i = random.nextInt(stageOfStudy.length);
         return stageOfStudy[i];
     }
+
+
 }
