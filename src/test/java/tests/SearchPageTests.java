@@ -15,7 +15,7 @@ public class SearchPageTests extends TestBaseRshb {
     void openPage() {
         searchPage.openSearchPage();
     }
-    @DisplayName("Проверка работы сроки поиска")
+    @DisplayName("Проверка работы строки поиска")
     @Test
     void checkSearchResult() {
         searchPage.fillSearchField(testsData.searchData)
