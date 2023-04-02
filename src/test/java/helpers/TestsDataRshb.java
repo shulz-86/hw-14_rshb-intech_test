@@ -3,6 +3,7 @@ package helpers;
 import com.github.javafaker.Faker;
 import com.github.javafaker.service.FakerIDN;
 
+import java.util.List;
 import java.util.Locale;
 import java.util.Random;
 
@@ -30,6 +31,13 @@ public class TestsDataRshb {
     public String searchData = "Стажировка",
     resultOfSearch = "Результаты вашего поиска",
     totalResult = "Найден 1 результат";
+
+    public String titleMainPage = "РСХБ в цифре";
+
+    public static int menuElementsCount = 1;
+    public static List<String> menuElements =
+            List.of("О нас Экспертиза и технологии Игры и квесты " +
+                    "Студентам и выпускникам AgroCode Hub АгроИнвест Клуб АгроБит");
 
 
     public String getCityRandom() {
