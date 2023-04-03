@@ -12,6 +12,8 @@ import pages.MainPage;
 import pages.RegistrationPage;
 import pages.SearchPage;
 
+import static com.codeborne.selenide.Selenide.closeWebDriver;
+
 public class TestBaseRshb {
     RegistrationPage rshbRegistrationPage = new RegistrationPage();
     MainPage mainPage = new MainPage();
@@ -45,5 +47,6 @@ public class TestBaseRshb {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
+        closeWebDriver();
     }
 }

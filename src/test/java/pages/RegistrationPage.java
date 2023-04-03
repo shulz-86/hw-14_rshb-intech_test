@@ -3,7 +3,6 @@ package pages;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.selector.ByText;
 import io.qameta.allure.Step;
-import results.RegistrationResultsModal;
 
 import java.io.File;
 
@@ -12,7 +11,6 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class RegistrationPage {
-    private RegistrationResultsModal registrationResultsModal = new RegistrationResultsModal();
 
     private final String TITLE_TEXT = "Заявка на стажировку";
 
@@ -33,7 +31,10 @@ public class RegistrationPage {
             attachResume = $("#resume_33dert121"),
             checkboxPersonalData = $(".checkbox-wrap.mt-2.w-100"),
             applyButton = checkboxPersonalData.parent().sibling(0).lastChild().find(".btn.btn--green.mt-0"),
-            closeButtonError = $x("(//div[@class='modal__close'])[2]");
+            closeButtonError = $x("(//div[@class='modal__close'])[2]"),
+            verifyModalAppears = $("div[class='modal izi-modal iziModal modal_active modal--short'] " +
+                    "div[class='modal__wrapper'] div[class='modal__body'] div[class='modal__inner'] " +
+                    "div[class='pr w-100 z-index-1'] div div[class='izi-modal__hh color--red']");
 
     @Step("открыть форму заявки")
     public RegistrationPage openPage() {
@@ -146,17 +147,19 @@ public class RegistrationPage {
     }
 
     public RegistrationPage verifyResult1() {
-        registrationResultsModal.verifyResult1();
+        $(".form__steps").lastChild().preceding(0).find(".form__step-title")
+                .shouldHave(text("Образование и навыки"));
         return this;
     }
 
     public RegistrationPage verifyResult2() {
-        registrationResultsModal.verifyResult2();
+        $(".form__steps").lastChild().find(".form__step-title")
+                .shouldHave(text("Достижения и опыт"));
         return this;
     }
     @Step("Проверить что заявка отправлена")
     public RegistrationPage verifyResultsModalAppears() {
-        registrationResultsModal.verifyModalAppears();
+        verifyModalAppears.shouldHave(text("Ошибка отправки"));
         return this;
     }
 }
