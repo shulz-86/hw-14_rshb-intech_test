@@ -2,6 +2,7 @@ package tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import config.WebDriverProvider;
 import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
@@ -12,27 +13,33 @@ import pages.MainPage;
 import pages.RegistrationPage;
 import pages.SearchPage;
 
+import static com.codeborne.selenide.Selenide.closeWebDriver;
+
 public class TestBaseRshb {
     RegistrationPage rshbRegistrationPage = new RegistrationPage();
     MainPage mainPage = new MainPage();
     SearchPage searchPage = new SearchPage();
 
     @BeforeAll
-    static void beforeAll() {
-        Configuration.holdBrowserOpen = true;
-        Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserVersion = System.getProperty("version", "100");
-        Configuration.browserSize = System.getProperty("size", "1920x1080");
-        Configuration.baseUrl = System.getProperty("baseUrl", "https://rshbdigital.ru");
-        Configuration.timeout = 5000;
-        Configuration.remote = System.getProperty("remote", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
-
-
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", true);
-        Configuration.browserCapabilities = capabilities;
+    static void setUp() {
+        WebDriverProvider.config();
     }
+//    static void beforeAll() {
+//
+//        Configuration.holdBrowserOpen = true;
+//        Configuration.timeout = 5000;
+//        Configuration.browser = System.getProperty("browser", "chrome");
+//        Configuration.browserVersion = System.getProperty("version", "100");
+//        Configuration.browserSize = System.getProperty("size", "1920x1080");
+//        Configuration.baseUrl = System.getProperty("baseUrl", "https://rshbdigital.ru");
+//        Configuration.remote = System.getProperty("remote", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
+//
+//
+//        DesiredCapabilities capabilities = new DesiredCapabilities();
+//        capabilities.setCapability("enableVNC", true);
+//        capabilities.setCapability("enableVideo", true);
+//        Configuration.browserCapabilities = capabilities;
+//    }
 
     @BeforeEach
     void addListener() {
@@ -45,5 +52,6 @@ public class TestBaseRshb {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
+        //closeWebDriver();
     }
 }

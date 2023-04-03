@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import helpers.TestsDataRshb;
 @Owner("Olshanskaya")
 @Tag("UITests")
-public class RshbStageRegistrationTests extends TestBaseRshb {
+public class StageRegistrationTests extends TestBaseRshb {
 
 TestsDataRshb testsData = new TestsDataRshb();
     @DisplayName("Заполнение формы тестовыми данными. Подача заявки")
