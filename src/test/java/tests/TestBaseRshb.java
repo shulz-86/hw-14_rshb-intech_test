@@ -24,22 +24,6 @@ public class TestBaseRshb {
     static void setUp() {
         WebDriverProvider.config();
     }
-//    static void beforeAll() {
-//
-//        Configuration.holdBrowserOpen = true;
-//        Configuration.timeout = 5000;
-//        Configuration.browser = System.getProperty("browser", "chrome");
-//        Configuration.browserVersion = System.getProperty("version", "100");
-//        Configuration.browserSize = System.getProperty("size", "1920x1080");
-//        Configuration.baseUrl = System.getProperty("baseUrl", "https://rshbdigital.ru");
-//        Configuration.remote = System.getProperty("remote", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
-//
-//
-//        DesiredCapabilities capabilities = new DesiredCapabilities();
-//        capabilities.setCapability("enableVNC", true);
-//        capabilities.setCapability("enableVideo", true);
-//        Configuration.browserCapabilities = capabilities;
-//    }
 
     @BeforeEach
     void addListener() {
@@ -52,6 +36,6 @@ public class TestBaseRshb {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
-        //closeWebDriver();
+        closeWebDriver();
     }
 }

@@ -30,12 +30,8 @@ TestsDataRshb testsData = new TestsDataRshb();
                     .verifyResult2()
                     .setResume(testsData.resume)
                     .clickCheckboxPersonalData()
-                    .clickApply();
-        }
-    @DisplayName("Проверка отправки формы. Закрываем форму")
-    @Test
-    public void verifyResultsModalAppears() {
-        rshbRegistrationPage.verifyResultsModalAppears()
-                .clickClose();
+                    .clickApply()
+                    .verifyResultsModalAppears()
+                    .clickClose();
     }
 }
